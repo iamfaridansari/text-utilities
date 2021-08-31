@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--  -->
+        <header>
+            <h1 class="heading">Text Utilities</h1>
+            <div class="buttons1">
+                <button class="btn" onclick="copyText()">Copy</button>
+                <button class="btn" onclick="clearText()">Clear</button>
+            </div>
+        </header>
+        <!--  -->
+        <textarea id="myInput" rows="10"></textarea>
+        <!--  -->
+        <div class="buttons2">
+            <button class="btn" onclick="upperCase()">Uppercase</button>
+            <button class="btn" onclick="lowerCase()">Lowercase</button>
+            <button class="btn" onclick="capitalize()">Capitalize</button>
+            <button class="btn" onclick="bold()">Bold</button>
+            <button class="btn" onclick="italic()">Italic</button>
+            <button class="btn" onclick="whiteSpace()">Whitespace</button>
+        </div>
+        <!--  -->
+        <input type="text" class="colorInput" id="colorInput" placeholder="Enter color code here">
+        <!--  -->
+        <select id="fontInput" class="fontInput">
+            <option value="" disabled >Select font</option>
+            <option value="'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+                Trebuchet</option>
+                <option value="Arial, Helvetica, sans-serif">Helvetica</option>
+                <option value="Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">cambria</option>
+                <option value="Georgia, 'Times New Roman', Times, serif">Georgia</option>
+                <option value="Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Haettenschweiler</option>
+                <option value="Verdana, Geneva, Tahoma, sans-serif">Verdana</option>
+                <option value="cursive">Cursive</option>
+                <option value="fantasy">Fantasy</option>
+        </select>
+        <!--  -->
+        <h3>Summary</h3>
+        <p id="charWord">0 character and 0 word</p>
+        <p id="wpm">0 word per minute</p>
+    </div>
+    <footer>Copyright &copy; Farid Ansari</footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
